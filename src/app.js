@@ -3,8 +3,14 @@ const express = require('express')
 const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
+const cors = require('cors')
+
+
+
 
 const app = express()
+
+app.use(cors())
 
 //define paths for express config
 const publicDirectory = path.join(__dirname, '../public')
