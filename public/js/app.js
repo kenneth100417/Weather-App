@@ -4,6 +4,9 @@ const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2')
+const cors = require('cors')
+
+app.use(cors({origin: 'http://localhost:3000'}));
 
 
 weatherForm.addEventListener('submit', (e) =>{
