@@ -1,13 +1,25 @@
 body{
     color: #333333;
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 650px;
     margin: 0 auto;
     padding: 0 16px;
+    max-width: 650px;
 
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+.container{
+    margin: 30px auto;
+    padding: 0 16px;
+    border: 1px solid #333333;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    max-width: 400px;
+    min-width: 400px;
+    border-radius: 20px;
 }
 
 .main-content{
@@ -19,15 +31,17 @@ footer{
     border-top: 2px solid #eeeeee;
     margin-top: 16px;
     padding: 16px 0;
+    text-align: center;
 }
 
 header{
     margin-top: 16px;
     margin-bottom: 48px;
+    text-align: center;
 }
 
 h1{
-    font-size: 64px;
+    font-size: 60px;
     margin-bottom: 16px;
 }
 
@@ -35,6 +49,11 @@ header a {
     color: #888888;
     margin-right: 16px;
     text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #4d4d4d;
 }
 
 .portrait{
@@ -44,6 +63,7 @@ header a {
 input{
     border: 1px solid #cccccc;
     padding: 8px;
+    border-radius: 15px;
 }
 
 button{
@@ -52,4 +72,41 @@ button{
     background: #888888;
     color: white;
     padding: 8px;
+    border-radius: 15px;
+}
+
+button:hover{
+    background: #5a5959;
+}
+
+form{
+    text-align: center;
+}
+
+.about-content{
+    text-align: center;
+    font-size: 25px;
+}
+
+p{
+    text-align: center;
+}
+
+p#message-1{
+    font-size: 22px;
+    margin-top: 80px;
+}
+
+p#message-2{
+    font-size: 24px;
+}
+
+h3{
+    text-align: center;
+    margin-top: 80px;
+}
+
+p.email{
+    text-align: center;
+    font-size: 16px;
 }
